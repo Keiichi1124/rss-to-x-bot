@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Runtime data
+data/
+test_data/
+test_data_isolated/
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and local artifacts
+*.log
+pytest_log.txt
+.DS_Store

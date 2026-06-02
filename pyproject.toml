@@ -1,0 +1,36 @@
+[project]
+name = "rss-to-x-bot"
+version = "0.1.0"
+description = "RSS-to-X automation bot with queueing, duplicate prevention, OAuth posting, CI, Docker, and JSON logging."
+authors = [
+    {name = "Keiichi1124"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = "^3.11"
+dependencies = [
+    "requests-oauthlib (>=2.0.0,<3.0.0)",
+    "feedparser (>=6.0.11,<7.0.0)",
+    "apscheduler (>=3.11.0,<4.0.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "bitlyshortener (>=0.6.4,<0.7.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "beautifulsoup4 (>=4.13.4,<5.0.0)",
+    "flask (>=3.1.0,<4.0.0)",
+    "python-json-logger (>=3.3.0,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "bot"}]
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8"
+mypy = "^1"
+coverage = "^7"
+pytest-mock = "^3.14.0"
+python-dateutil = "^2.9.0.post0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
